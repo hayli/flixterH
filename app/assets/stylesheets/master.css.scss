@@ -1,6 +1,37 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 @import url(http://fonts.googleapis.com/css?family=Rokkitt);
 
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+.btn {
+  border-radius:0;
+}
+.frosty {
+  background:rgba(0,0,0, 0.5);
+  color: white;
+  position: absolute;
+  top: 25%;
+}
+.frosty h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+.frosty h2{
+  font-family: 'Rokkitt', serif;
+  font-weight: 200;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+.hero{
+  background: url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
+  box-shadow: 0px 3px 8px #bdc3c7;
+}
 .navbar {
   border-radius: 0;
   font-family: 'Rokkitt', serif;
@@ -9,7 +40,6 @@
   background:url('double_lined.png');
 }
 .text-brand {
-  padding-left: 45px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   color: #2ecc71;
@@ -18,7 +48,7 @@
   width:2em;
   height:2em;
   box-shadow:0 1px 3px rgba(0,0,0,.2);
-  position: absolute;
+  position: relative;
   bottom: 8px;
   z-index:1;
   transition:0.2s ease box-shadow;
