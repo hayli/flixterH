@@ -1,8 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
 
+.navbar {
+  border-radius: 0;
+  font-family: 'Rokkitt', serif;
+  font-size: 20px;
+  box-shadow: 0px 1px 3px #bdc3c7;
+  background:url('double_lined.png');
+}
 .text-brand {
   padding-left: 45px;
   font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #2ecc71;
 }
 .icon {
   width:2em;
