@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+.text-brand {
+  padding-left: 45px;
+  font-family: 'Lato', sans-serif;
+}
+.icon {
+  width:2em;
+  height:2em;
+  box-shadow:0 1px 3px rgba(0,0,0,.2);
+  position: absolute;
+  bottom: 8px;
+  z-index:1;
+  transition:0.2s ease box-shadow;
+  margin:0 auto;
+}
+.icon:hover {
+  box-shadow:0 1px 3px rgba(0,0,0,.4);
+}
+.icon * {
+  box-sizing:border-box;
+}
+.icon-floppy {
+  background:#333;
+}
+/* floppy metal plate */
+.icon-floppy:after {
+  position:absolute;
+  bottom:0px;
+  background:#333;
+  height:.35em;
+  width:.25em;
+  right:.6em;
+  content:"";
+  transition:0.2s ease all;
+}
+.icon-floppy:before {
+  position:absolute;
+  bottom:0px;
+  background:#bbb;
+  height:.5em;
+  width:1em;
+  left:50%;
+  margin-left:-.5em;
+  content:"";
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  transition:0.2s ease all;
+}
+/* floppy label */
+.icon-floppy span {
+  position:absolute;
+  width:1.6em;
+  top:0em;
+  height:1.1em;
+  background:#fff;
+  display:block;
+  margin-left:-.8em;
+  left:50%;
+  border-top:.2em solid #00D900;
+  border-bottom:.1em solid #00D900;
+}
+.icon-floppy span:after {
+  position:relative;
+  background:rgba(0,0,0,.1);
+  height:1px;
+  display:block;
+  content:"";
+  width:100%;
+  margin-top:.25em;
+  clear:both;
+  overflow:hidden;
+  line-height:1px;
+  bottom:1em;
+}
+.icon-floppy span:before {
+  position:relative;
+  background:rgba(0,0,0,.1);
+  height:1px;
+  display:block;
+  content:"";
+  width:100%;
+  margin-top:.25em;
+  clear:both;
+  overflow:hidden;
+  line-height:1px;
+}
+/* hover slide effect */
+.icon-floppy:hover:before {
+  left:50%;
+  margin-left:-.8em;
+}
+.icon-floppy:hover:after {
+  right:.95em;
+}
