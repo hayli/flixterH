@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Use devise for user authentication
+gem 'devise', '>= 3.2.4'
+
 # Use twitter bootstrap with bootstrap-sass 
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'autoprefixer-rails'
