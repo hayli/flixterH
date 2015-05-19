@@ -24,12 +24,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
-            <ul class="navbar-nav list-inline">
+
+          <%= link_to(root_path, :class => 'navbar-brand') do %> 
+             <ul class="navbar-nav list-inline">
               <li><div class="icon icon-floppy"><span>&nbsp;</span></div></li>
               <li class="text-brand">FLIXTER</li>
             </ul>
-          </a>
+          <% end %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -92,9 +93,9 @@
  
   <div id="footer">
     <div class="container">
-      <b>Footer Here</b>
+      <b>Teachers</b>
       <br />
-      <%= link_to 'Link', '#' %>
+      <%= link_to 'Teach a Course', new_instructor_course_path %>
     </div>
   </div>
 
