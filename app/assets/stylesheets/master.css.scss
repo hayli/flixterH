@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 @import url(https://fonts.googleapis.com/css?family=Rokkitt);
 
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+  margin: 10px;
+}
 .clr {
   clear:both;
 }
@@ -24,7 +31,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin:0;
 }
 .homepage {
-  background: url('bg.png');
+  background: url('bg.jpg');
   font-family: 'Rokkitt', serif, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 .btn {
