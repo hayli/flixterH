@@ -1,5 +1,5 @@
 <ul class="course-sections-list">
-  <% @course.sections.each do |section| %>
+  <% current_course.sections.each do |section| %>
     <li>
       <%= section.title %>
       <%= link_to 'New Lesson', new_instructor_section_lesson_path(section),

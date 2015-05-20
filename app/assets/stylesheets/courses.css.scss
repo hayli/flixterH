@@ -2,6 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.course-listings {
+  font-family: 'Lato', sans-serif;
+  a {
+    color: #096176;
+  }
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #096176;
+    color: #096176;
+  }
+  a:active {
+    color: #2ecc71;
+  }
+}
 .student-panel-wrapper {
   padding-bottom: 10px;
 }
