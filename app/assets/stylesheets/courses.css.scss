@@ -2,10 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.price{
-	font-size: 22px;
-	font-weight: 100;
+.student-panel-wrapper {
+  padding-bottom: 10px;
+} 
+.teacher-panel-wrapper {
+  padding: 10px;
 }
-.description{
-	font-size: 18px;
+.course-description{
+  font-size: 18px;
+}
+.price{
+  font-size: 18px;
+  font-weight: 100;
 }
