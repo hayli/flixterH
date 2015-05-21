@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 @import url(https://fonts.googleapis.com/css?family=Rokkitt);
 
+/*for styling simple form errors*/
 .field_with_errors {
   color: #ff3333;
   background-color: #FFEEEE;
@@ -20,7 +21,7 @@
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 20px;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
 }
 .booyah-box {
   h2, h1 {
@@ -36,6 +37,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 .btn, .label {
   border-radius:0;
+  font-family: 'Lato', sans-serif;
+}
+.btn-primary, .label-primary {
+  background-color: #096176;
+}
+.btn-primary:hover{
+    background-color: #095460;
 }
 .frosty {
   background:rgba(0,0,0, 0.5);

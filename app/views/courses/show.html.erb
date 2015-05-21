@@ -1,21 +1,25 @@
-<br />
+<div class="show-course-content booyah-box col-xs-10 col-xs-offset-1">
+  <!-- Course info -->
+  <div class="text-center">
+    <%= render 'courses/info' %>
+  </div>
 
-<div class="booyah-box col-xs-10 col-xs-offset-1">
-  <h1><%= @course.title %></h1>
-  <br />
-  <div class="col-sm-4 col-xs-12 text-center">
+  <!-- Check if user is logged in and the creator of the course -->
+  <% if current_user && current_user == current_course.user %>
+    <div class="teacher-panel-wrapper col-xs-12 text-center">
+      <%= link_to 'Access Instructor Panel', instructor_course_path(current_course), 
+      :class => 'btn btn-success btn-lge' %>
+    </div>
+  <% end %>
+  <br class="clr" />
+  <div class="course-price col-xs-10">
     <span class="label label-primary price">
-      <%= number_to_currency @course.cost %>
+      <%= number_to_currency current_course.cost %>
     </span>
-
-    <% if current_user && current_user == @course.user %>
-      <br />
-      <br />
-      <%= link_to 'Administer', instructor_course_path(@course), :class => 'btn btn-success btn-large' %>
-    <% end %>
   </div>
 
-  <div class="col-sm-8 col-xs-12 description">
-    <%= @course.description %>
-  </div>
+  <br class="clr" />
+  <%= render partial: 'courses/sections_list', 
+    locals: {include_instructor_view: false } %>
+
 </div>

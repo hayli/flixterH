@@ -2,10 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.price{
-	font-size: 22px;
-	font-weight: 100;
+
+.course-listings {
+  font-family: 'Lato', sans-serif;
+  a {
+    color: #096176;
+  }
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #096176;
+    color: #096176;
+  }
+  a:active {
+    color: #2ecc71;
+  }
 }
-.description{
-	font-size: 18px;
+.student-panel-wrapper {
+  padding: 10px;
+  margin: 0px;
+}
+.course-price{
+  padding: 10px;
+}
+.price{
+  font-size: 18px;
+  font-weight: 100;
+}
+.course-description{
+  font-size: 18px;
+}
+.course-sections-list {
+  padding-right: 10px;
+}
+.section-id{
+  color: #096176;
+}
+.lesson{
+ font-family: 'Lato', sans-serif;
+  a {
+    color: black;
+  }
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+  }
+  a:active {
+    color: #2ecc71;
+  }
 }
