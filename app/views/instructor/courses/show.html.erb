@@ -5,17 +5,17 @@
     <%= render 'courses/info' %>
   </div>
 
-  <div class="student-panel-wrapper col-xs-10 col-xs-offset-1 text-center">
+  <div class="student-panel-wrapper col-xs-12 text-center">
     <%= link_to 'Student view', course_path(current_course), 
-      :class => 'btn btn-primary' %>
-  </div>
-  
-  <div class="add-section">
-    <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), 
       :class => 'btn btn-success' %>
   </div>
-
   <br class="clr" />
-  <%= render 'courses/sections_list' %>
+  <div class="add-section">
+    <%= link_to 'Add a new section', new_instructor_course_section_path(current_course), 
+      :class => 'btn btn-primary' %>
+  </div>
+
+  <%= render partial: 'courses/sections_list', 
+    locals: {include_instructor_view: true } %>
 
 </div>

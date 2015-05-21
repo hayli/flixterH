@@ -1,16 +1,22 @@
 <ul class="course-sections-list">
   <% current_course.sections.each do |section| %>
-    <li>
-      <%= section.title %>
-      <%= link_to 'New Lesson', new_instructor_section_lesson_path(section),
-      :class => "pull-right btn btn-success btn-s" %>
+    <li class="section">
+      <h3 class="section-id">
+        <%= section.title %>
+      </h3>
+      <% if include_instructor_view %>
+        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section),
+        :class => "pull-right btn btn-success" %>
+      <% end %>
 
-      <ul>
+      <ul class="section-lessons-list">
         <% section.lessons.each do |lesson| %>
-          <li>
-            <b><%= lesson.title %></b>
-            -
-            <%= lesson.subtitle %>
+          <li class="lesson">
+            <%= link_to lesson_path(lesson) do %>
+              <b><%= lesson.title %></b>
+              -
+              <%= lesson.subtitle %>
+            <% end %>
           </li>
         <% end %>
       </ul>
