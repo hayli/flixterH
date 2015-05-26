@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+# Use Figaro to manage private info
+gem "figaro"
+
+# Use Carrierwave for image uploads
+gem 'carrierwave'
+
 # Use simple forms for form fields
 gem 'simple_form'
 

@@ -6,8 +6,9 @@
     <h2 class="course-listings">
       <%= link_to course.title, course_path(course) %>
     </h2>
-    <div class="col-sm-9 col-xs-12">
-      <%= course.description %>
+    <%= image_tag course.image, :class => "imgs img-responsive" %>
+    <div class="course-description col-sm-9 col-xs-12">
+      <%= simple_format course.description %>
     </div>
     <div class="col-sm-3 col-xs-12">
       <%= link_to 'More Details', course_path(course), :class => 'btn btn-success btn pull-right' %>

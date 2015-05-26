@@ -1,3 +1,4 @@
 <h1 class="course-title"><%= current_course.title %></h1>
-<p class="course-description"><%= current_course.description %></p>
+<p><%= simple_format current_course.description, :class => "course-description" %></p>
+<%= image_tag current_course.image, :class => "imgs img-responsive" %>
 
