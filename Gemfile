@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Use Figaro to manage private info
 gem "figaro"
 
+# Allow carrierwave to communicate with Amazon S3
+gem "fog", "~> 1.3.1"
+
 # Use Carrierwave for image uploads
 gem 'carrierwave'
 
